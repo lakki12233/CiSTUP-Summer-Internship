@@ -39,11 +39,16 @@ const App = () => {
 
   return (
     <div className="App">
-      <nav className="navbar">My Image Processor</nav>
+      <nav className="navbar">
+        <h1>My Image Processor</h1>
+      </nav>
       <div className="container">
         <div className="upload-section">
           <h2>Upload Image</h2>
-          <input type="file" accept="image/*" onChange={handleImageUpload} />
+          <label htmlFor="file-upload" className="custom-file-upload">
+            Choose File
+          </label>
+          <input id="file-upload" type="file" accept="image/*" onChange={handleImageUpload} />
           {image && <img src={image} alt="Uploaded" className="uploaded-image" />}
         </div>
         <div className="processed-image-section">
