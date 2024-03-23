@@ -1,20 +1,14 @@
-# CiSTUP-Summer-Internship
-## Vehicle Detection Web Application
+# CiSTUP Summer Internship - Vehicle Detection Web Application
 
-This web application allows users to upload images for vehicle detection and counting using a pre-trained Haar Cascade classifier model. Below are the instructions for setting up, running, and testing the application locally.
+This repository contains a web application for vehicle detection and counting using a pre-trained Haar Cascade classifier model. The project is divided into two branches: FrontEnd and BackEnd-server. Below are the instructions for setting up, running, and testing the application locally.
 
-Here we have 2 branches 
-FrontEnd and 
-BackEnd-server
-
-### Installation Instructions
+## Installation Instructions
 
 1. Clone the repository to your local machine:
 
    ```
-   [git clone https://github.com/your-username/vehicle-detection-web-app.git](https://github.com/lakki12233/CiSTUP-Summer-Internship.git)
+   git clone https://github.com/lakki12233/CiSTUP-Summer-Internship.git
    ```
-
 
 2. Install the required Python packages using pip:
 
@@ -22,7 +16,9 @@ BackEnd-server
    pip install -r requirements.txt
    ```
 
-### Running the Application
+## Running the Application
+
+### Backend Server
 
 1. Start the Flask backend server:
 
@@ -30,31 +26,33 @@ BackEnd-server
    python app.py
    ```
 
-2. The backend server should start running at `http://localhost:5000`.
+2. The backend server should start running at [http://localhost:5000](http://localhost:5000).
 
-3. Open a new terminal window and navigate to the frontend directory:
+### Frontend Server
+
+1. Open a new terminal window and navigate to the frontend directory:
 
    ```
-   cd frontend
+   cd FrontEnd
    ```
 
-4. Install the frontend dependencies:
+2. Install the frontend dependencies:
 
    ```
    npm install
    ```
 
-5. Start the React development server:
+3. Start the React development server:
 
    ```
    npm start
    ```
 
-6. The frontend server should start running at `http://localhost:3000`.
+4. The frontend server should start running at [http://localhost:3000](http://localhost:3000).
 
-### Testing the Application
+## Testing the Application
 
-1. Open your web browser and go to `http://localhost:3000`.
+1. Open your web browser and go to [http://localhost:3000](http://localhost:3000).
 
 2. You will see the web application interface with options to upload an image and view the processed image.
 
@@ -66,7 +64,7 @@ BackEnd-server
 
 6. If there are any errors during the upload or processing, an error message will be shown on the screen.
 
-### Dependencies
+## Dependencies
 
 - Python 3.x
 - Flask
@@ -75,7 +73,7 @@ BackEnd-server
 - Node.js
 - React
 
-### Additional Notes
+## Additional Notes
 
 - Ensure that both the frontend and backend servers are running simultaneously for the application to work correctly.
 - The Haar Cascade model for vehicle detection is included in the `modules` directory (`haarcascade_car.xml`).
