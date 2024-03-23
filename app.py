@@ -10,7 +10,6 @@ CORS(app, origins='http://localhost:3000')
 model_path = 'modules/haarcascade_car.xml'
 
 def detect_and_count_vehicles(image_path):
-    # Load the image
     image = cv2.imread(image_path)
     if image is None:
         return {'error': 'No vehicles detected'}
@@ -31,7 +30,7 @@ def detect_and_count_vehicles(image_path):
     # Count the number of vehicles detected
     vehicle_count = len(vehicles)
 
-    # Save the output image with bounding boxes (optional, for debugging purposes)
+    # Save the output image with bounding boxes 
     cv2.imwrite('output.jpg', image)
 
     return {'message': 'Vehicle detection successful', 'vehicle_count': vehicle_count, 'processed_image': 'output.jpg'}
@@ -45,7 +44,7 @@ def upload_file():
     if file.filename == '':
         return jsonify({'error': 'No selected file'})
 
-    # Save the uploaded file temporarily
+    
     file_path = os.path.join('uploads', file.filename)
     file.save(file_path)
 
