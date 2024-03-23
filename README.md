@@ -3,21 +3,20 @@
 
 This web application allows users to upload images for vehicle detection and counting using a pre-trained Haar Cascade classifier model. Below are the instructions for setting up, running, and testing the application locally.
 
+Here we have 2 branches 
+FrontEnd
+BackEnd-server
+
 ### Installation Instructions
 
 1. Clone the repository to your local machine:
 
    ```
-   git clone https://github.com/your-username/vehicle-detection-web-app.git
+   [git clone https://github.com/your-username/vehicle-detection-web-app.git](https://github.com/lakki12233/CiSTUP-Summer-Internship.git)
    ```
 
-2. Navigate to the project directory:
 
-   ```
-   cd vehicle-detection-web-app
-   ```
-
-3. Install the required Python packages using pip:
+2. Install the required Python packages using pip:
 
    ```
    pip install -r requirements.txt
