@@ -4,7 +4,7 @@
 This web application allows users to upload images for vehicle detection and counting using a pre-trained Haar Cascade classifier model. Below are the instructions for setting up, running, and testing the application locally.
 
 Here we have 2 branches 
-FrontEnd
+FrontEnd and 
 BackEnd-server
 
 ### Installation Instructions
